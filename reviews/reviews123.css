@@ -1,0 +1,56 @@
+body{
+    background-color: darkblue;
+}
+.container{
+    background-color: aliceblue;
+    width: 400px;
+    height: 500px;
+    margin: auto;
+    margin-top: 40px;
+    padding: 20px;
+    border-radius: 50px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+header{
+    text-align: center;
+}
+hr{
+    color: aliceblue;
+    width: 300px;
+    border-top: 7px solid cornflowerblue;
+    border-style: dotted;
+}
+
+.main{
+    text-align: center;
+}
+
+.image{
+    margin: 20px;
+    width: 130px;
+}
+h1{
+    color: darkblue;
+}
+footer{
+    text-align: center;
+}
+.btn_n{
+    display:block;
+    margin: auto;
+    margin-top: 10px;
+}
+button{
+    width: 70px;
+    height: 30px;
+    background:none;
+    border: 2px solid blue;
+    border-radius: 10px;
+    color: blue;
+    
+}
+
+button:hover{
+    background-color: blue;
+    color: white;
+}
