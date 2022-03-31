@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Color-Flipper</title>
+    <style>
+        body{
+            background-color: antiquewhite;
+            text-align: center;
+        }
+        h3{
+            background-color: black;
+            color: white;
+            display: inline-block;
+            border: 2px solid black;
+            border-radius: 10px;
+            height: 20px;
+            text-align: center;
+            margin: auto;
+            padding: 30px 30px;
+            text-align: center;
+            
+        }
+        button{
+            display: block;
+            margin: auto;
+            background: none;
+            color: black;
+            width: 100px;
+            height: 50px;
+            border-radius: 20px;
+            margin-top: 20px;
+        }
+        .text{
+            margin-top: 200px;
+        }
+    </style>
+</head>
+<body>
+     <h1 class="text">Color flipper</h1>
+     <h3 >background-color: <span>Color-value</span></h3>
+     <button><b>click me</b></button>
+    
+     <script>
+        let colors=["green","blue","red","yellow","black","crimson"];
+        // generate random number between o-5
+        
+        var text=document.querySelector('span');
+
+        document.querySelector('button').addEventListener('click',colorChange)
+        function colorChange(){
+            var randomNumber= Math.floor(Math.random()*6);
+            document.body.style.backgroundColor=colors[randomNumber];
+            text.innerHTML=colors[randomNumber];
+        }
+     </script>
+</body>
+</html>

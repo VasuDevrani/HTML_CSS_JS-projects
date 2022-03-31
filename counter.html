@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Counter</title>
+    <style>
+        body{
+           text-align: center;
+           background-color:blue ;
+        }
+        .text{
+            font-size: 4rem;
+            color: white;
+        }
+        button{
+            background: none;
+            color: white;
+            width: 100px;
+            height: 60px;
+            border: 2px solid white;
+            border-radius: 20px; 
+            font-size: 20px;
+        }
+        button:hover{
+            background-color: white;
+            color: blue;
+        }
+    </style>
+</head>
+<body>
+    <h1 class="text">Counter</h1>
+    <h2 class="text">0</h2>
+    <button class="increase">increase</button>
+    <button class="reset">reset</button>
+    <button class="decrease">decrease</button>
+
+    <script>
+        var btn1=document.querySelector('.increase');
+        var btn2=document.querySelector('.reset');
+        var btn3=document.querySelector('.decrease');
+        let count=0;
+
+        var num=document.querySelector('h2');
+        btn1.addEventListener('click',function(){
+            count++;
+             num.innerHTML=count;
+        })
+
+        btn3.addEventListener('click',function(){
+            count--;
+             num.innerHTML=count;
+        })
+
+        btn2.addEventListener('click',function(){
+            count=0;
+             num.innerHTML=count;
+        })
+    </script>
+</body>
+</html>
