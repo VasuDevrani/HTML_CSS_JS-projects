@@ -1,0 +1,143 @@
+body {
+  background-color: #333;
+  margin: 0;
+  padding: 0;
+}
+
+/* button */
+.main{
+    text-align: center;
+    margin-top: 100px;
+}
+.btn{
+    height: 100px;
+    width: 200px;
+    border-radius: 30px;
+    background: none;
+    color: white;
+    font-size: 50px;
+}
+#Play:hover{
+    background-color: crimson;
+    border: crimson;
+    
+}
+#End:hover{
+    background-color: goldenrod;
+    border:goldenrod;
+    
+}
+
+/* audiobox */
+  .scr{
+      display: block;
+      margin: auto;
+      width: 500px;
+      height: 300px;
+      border-radius: 50%;
+  }
+  h1{
+      font-size: 100px;
+      text-align: center;
+      color: white;
+  }
+
+
+/* footer */
+.footer {
+  background-color: #3585ff;
+  min-height: 100px;
+  width: 100%;
+  position: absolute;
+  bottom: 0px;
+}
+.icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+}
+.icons li {
+  list-style-type: none;
+  margin: 10px 30px;
+  font-size: 40px;
+}
+.icons li a {
+  color: white;
+  display: inline-block;
+  transition: 0.5s;
+}
+.icons li a:hover {
+  transform: translateY(-15px);
+}
+
+.pages {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.pages li {
+  list-style-type: none;
+  margin: 0px 30px;
+  margin-bottom: 10px;
+
+  font-size: 20px;
+  color: white;
+  opacity: 70%;
+  cursor: pointer;
+}
+.pages li:hover {
+  opacity: 100%;
+}
+
+.waves {
+    position: absolute;
+    top: -99px;
+    left: 0;
+    width: 100%;
+  background:url('wave.png');
+  height: 100px;
+  background-size: 1000px 100px ;
+}
+#wave1 {
+   z-index: 1000;
+   opacity: 1;
+   bottom: 0;
+   animation: animateWave 2s linear infinite;
+}
+#wave2 {
+    z-index: 999;
+    opacity: 0.7;
+    bottom: 10px;
+    animation: animateWave1 3s linear infinite;
+ }
+ #wave3 {
+    z-index:998;
+    opacity: 0.5;
+    bottom: 20px;
+    animation: animateWave 4s linear infinite;
+ }
+ #wave4 {
+    z-index: 997;
+    opacity: 0.4;
+    bottom: 30px;
+    animation: animateWave1 5s linear infinite;
+ }
+
+@keyframes animateWave {
+    0%{
+        background-position-x: 1000px;
+    }
+    100%{
+        background-position-x: 0px;
+    }
+}
+@keyframes animateWave1 {
+    0%{
+        background-position-x: 0px;
+    }
+    100%{
+        background-position-x: 1000px;
+    }
+    
+}
