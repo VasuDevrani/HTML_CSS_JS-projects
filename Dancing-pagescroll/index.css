@@ -1,0 +1,112 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: aliceblue;
+}
+
+/* navbar */
+.navbar {
+  background-color: rgb(54, 6, 100);
+  height: 100px;
+  width: 100%;
+}
+.nav {
+  margin: 0;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-around;
+}
+/* navbar ends */
+
+.item {
+  color: white;
+  list-style-type: none;
+  margin-top: 20px;
+}
+li a {
+  color: white;
+  text-decoration: none;
+  font-size: 30px;
+}
+li a:hover {
+  color: beige;
+  text-decoration: underline;
+}
+.sect {
+  color: black;
+  font-size: 50px;
+  font-weight: bold;
+  width: 100%;
+  height: 120vh;
+  margin-left: 50px;
+
+}
+.up {
+  display: block;
+  margin: 20px 10px;
+  height: 60px;
+  width: 150px;
+  font-size: 20px;
+  padding: 8px;
+  border-radius: 40px;
+  color: white;
+  background-color: crimson;
+  border: 2px solid red;
+  font-weight: bold;
+}
+.up:hover {
+  color: red;
+  background-color: white;
+}
+.up:hover .moveup {
+  color: red;
+}
+.moveup {
+  color: white;
+  text-decoration: none;
+}
+.para1 {
+  font-size: large;
+  width: 60vw;
+  text-align: center;
+  line-height: 20px;
+  background: url("dancinggifs.gif");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  -webkit-background-clip: text;
+  color: transparent;
+  filter: brightness(10%);
+}
+.para2 {
+  font-size: large;
+  width: 60vw;
+  text-align: center;
+  line-height: 20px;
+  background: url("abcd.gif");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  -webkit-background-clip: text;
+  color: transparent;
+  filter: brightness(10%);
+  overflow: hidden;
+}
+.para3,
+.para4 {
+  font-size: large;
+  width: 60vw;
+  text-align: center;
+  line-height: 20px;
+  background: url("anime.gif");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  overflow: hidden;
+}
