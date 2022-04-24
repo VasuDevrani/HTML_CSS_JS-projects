@@ -1,0 +1,70 @@
+body{
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.container{
+    width: 100%;
+    height: 100vh;
+}
+.overlay{
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    background-color: black;
+    top: 0px;
+    opacity: 70%;
+    z-index: -1;
+}
+.video-cont{
+   width: 100vw;
+   height: 100vh;
+}
+.overlay{
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    background-color: black;
+    top: 0px;
+    opacity: 70%;
+}
+.heading{
+     position: absolute;
+     top: 30%;
+     font-size: 60px;
+}
+.button{
+    width: 120px;
+    height: 50px;
+    border-radius: 30px;
+    background-color: black;
+    border: 5px solid black;
+     display: block;
+     margin: auto;
+    position: relative;
+    bottom: 370px;
+}
+.mover{
+    width: 60px;
+    height: 50px;
+    border-radius: 30px;
+    background-color: white;
+    transition: all 300ms ease-out;
+}
+.trans{
+    transform:translateX(60px);
+}
+
+.preloader{
+    height: 100vh;
+    width: 100vw;
+    z-index:999;
+    position: absolute;
+    background: url("PVtR.gif");
+    background-repeat:round;
+    object-fit: cover;
+}
+
