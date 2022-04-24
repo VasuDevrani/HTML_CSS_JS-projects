@@ -1,0 +1,64 @@
+body {
+  padding: 0;
+  margin: 0;
+  text-align: center;
+ 
+  background: linear-gradient(
+    90deg,
+    rgba(200, 3, 63, 1) 22%,
+    rgba(0, 212, 255, 1) 84%
+   
+  );
+}
+
+.box {
+  height: 250px;
+  width: 400px;
+  background-color: black;
+  margin: 30px 50px;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 60px;
+  padding: 20px;
+}
+.container1,
+.container2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.class1 {
+  display: block;
+}
+.class2 {
+  display: none;
+}
+.modal{
+    height: 400px;
+    width: 600px;
+    position: relative;
+    left: 30%;
+}
+img {
+  object-fit: cover;
+  height: 40px;
+  width: 600px;
+}
+
+.cross{
+  height:50px;
+  width: 130px;
+  color: black;
+  background-color: aliceblue;
+  border: 3px solid black;
+  font-weight: bolder;
+}
+.cross:hover{
+   background-color:blue ;
+   color: white;
+}
+
+
