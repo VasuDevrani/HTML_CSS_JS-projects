@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Slider</title>
+    
+    <style>
+      body {
+        padding: 0;
+        margin: 0;
+        background-color: black;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 100px;
+      }
+      .swiper {
+        height: 60vh;
+        width: 50vw;
+        padding: 10px;
+        border: 5px solid white;
+      }
+      img {
+        height: 60vh;
+        width: 50vw;
+      }
+      .swiper-scrollbar{
+        color: aqua;
+      }
+      /* .btn:hover{
+        border: 2px solid aqua;
+        padding: 10px;
+      } */
+    </style>
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper@8/swiper-bundle.min.css"
+    />
+    
+  </head>
+  <body>
+    <!-- Slider main container -->
+    <div class="swiper">
+      <!-- Additional required wrapper -->
+      <div class="swiper-wrapper">
+        <!-- Slides -->
+        <div class="swiper-slide"><img src="car1.jpg" alt="car" /></div>
+        <div class="swiper-slide"><img src="car2.jpg" alt="car" /></div>
+        <div class="swiper-slide"><img src="car3.jpg" alt="car" /></div>
+      </div>
+      <!-- If we need pagination -->
+      <div class="swiper-pagination"></div>
+
+      <!-- If we need navigation buttons -->
+      <div class="swiper-button-prev btn"></div>
+      <div class="swiper-button-next btn"></div>
+
+      <!-- If we need scrollbar -->
+      <div class="swiper-scrollbar"></div>
+    </div>
+
+    <script type="module">
+        import Swiper from 'https://unpkg.com/swiper@8/swiper-bundle.esm.browser.min.js'
+
+        const swiper = new Swiper('.swiper', {
+        
+        autoplay: {
+            delay:3000,
+            disableOnInteraction:false
+        },
+
+        loop: true,
+
+        // If we need pagination
+        pagination: {
+          el: '.swiper-pagination',
+        },
+
+        // Navigation arrows
+        navigation: {
+          nextEl: '.swiper-button-next',
+          prevEl: '.swiper-button-prev',
+        },
+        
+        scrollbar: {
+    el: '.swiper-scrollbar',
+  },
+      });
+
+    </script>
+  </body>
+</html>
